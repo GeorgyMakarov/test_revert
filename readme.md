@@ -8,3 +8,27 @@ not affect future commits.
 ```
 git revert {commit_id}'
 ```
+
+Create separate revert commits:
+
+```
+git revert a867b4af 25eee4ca 0766c053
+```
+
+Create a range of commits:
+
+```
+git revert HEAD~2..HEAD
+```
+
+Revert a range of commits using commit hashes (non inclusive of first hash):
+
+```
+git revert 0d1d7fc..a867b4a
+```
+
+Reverting a merge commit
+
+```
+git revert -m 1 <merge_commit_sha>
+```
