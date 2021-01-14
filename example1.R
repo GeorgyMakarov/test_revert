@@ -1,0 +1,5 @@
+set.seed(123)
+x = rnorm(1000, 100, 10)
+y = rnorm(1000, 100, 10)
+plot(x, y, col = "dodgerblue1", frame = F, pch = 19)
+points(x, y, col = "black", pch = 21)
